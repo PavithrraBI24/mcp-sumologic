@@ -1,0 +1,25 @@
+{
+    "servers": {
+      "sumologic": {
+        "command": "docker",
+        "args": [
+          "run",
+          "-i",
+          "--rm",
+          "-e",
+          "SUMOLOGIC_ACCESS_ID",
+          "-e",
+          "SUMOLOGIC_ACCESS_KEY",
+          "-e",
+          "SUMOLOGIC_API_ENDPOINT",
+          "sumologic-mcp-server"
+        ],
+        "env": {
+          "SUMOLOGIC_ACCESS_ID": "your_access_id",
+          "SUMOLOGIC_ACCESS_KEY": "your_access_key",
+          "SUMOLOGIC_API_ENDPOINT": "https://api.us2.sumologic.com/api"
+        },
+        "description": "MCP server for SumoLogic API integration"
+      }
+    }
+  }

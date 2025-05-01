@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  sumologic-mcp-server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - SUMOLOGIC_ACCESS_ID=${SUMOLOGIC_ACCESS_ID}
+      - SUMOLOGIC_ACCESS_KEY=${SUMOLOGIC_ACCESS_KEY}
+      - SUMOLOGIC_API_ENDPOINT=${SUMOLOGIC_API_ENDPOINT}
+      - NODE_ENV=production
+    stdin_open: true
+    tty: true
