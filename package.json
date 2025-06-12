@@ -21,7 +21,7 @@
     "author": "",
     "license": "MIT",
     "dependencies": {
-      "@modelcontextprotocol/typescript-sdk": "^0.4.0",
+      "@modelcontextprotocol/sdk": "1.12.1",
       "axios": "^1.6.0",
       "dotenv": "^16.3.1"
     },
